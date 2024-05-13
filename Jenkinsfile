@@ -10,5 +10,11 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/Mambroise/Sieli-Jenkins-test.git'
             }
         }
+        stage("Unit Test"){
+
+            steps{
+                sh'mvn test'
+            }
+        }
     }
 }
