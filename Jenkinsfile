@@ -38,5 +38,14 @@ pipeline{
                 }
             }
         }
+        stage("COUNTINOUS DELIVERY"){
+
+            steps{
+
+                script{
+                    sh 'cp -r /home/ubuntu/.jenkins/workspace/Nom_de_lappli /var/www/html'
+                }
+            }
+        }
     }
 }
