@@ -7,7 +7,7 @@ pipeline{
         stage("COUNTINOUS DOWLOAD"){
 
             steps{
-                git branch: 'main', url: 'https://github.com/Mambroise/jenkins-training-CICD/SIELI-CICD.git'
+                git branch: 'main', url: 'https://github.com/Mambroise/Sieli-Jenkins-test.git'
             }
         }
     }
